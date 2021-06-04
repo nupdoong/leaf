@@ -27,7 +27,7 @@ def main():
     # Set the random seed if provided (affects client sampling, and batching)
     random.seed(1 + args.seed)
     np.random.seed(12 + args.seed)
-    tf.set_random_seed(123 + args.seed)
+    tf.random,set_seed(123 + args.seed)
 
     model_path = '%s/%s.py' % (args.dataset, args.model)
     if not os.path.exists(model_path):
